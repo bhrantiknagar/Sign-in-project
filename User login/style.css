@@ -11,8 +11,9 @@ body {
     align-items: center;
     min-height: 100vh;
     /* background: url("img4.jpg")no-repeat; */
-    /* background: url("health.jpg")no-repeat; */
-    background: url("no.5.jpg")no-repeat;
+    background: url("health.jpg")no-repeat;
+    /* background: url("health\ 2.jpeg")no-repeat; */
+    /* background: url("no.5.jpg")no-repeat; */
     background-size: cover;
     background-position: center;
 }

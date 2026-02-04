@@ -15,7 +15,7 @@
     <header>
         <nav>
              <ul class="sidebar">
-                <li><a href="#">logo</a></li>
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Explore</a></li>
                 <li><a href="#">About</a></li>
@@ -24,16 +24,27 @@
             </ul>
             <ul>
                 <li><a href="#">logo</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Sign in/log in</a></li>
-                <li id="list"><a href="#"><i class="fa-solid fa-list"></i></a></li>
-
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Explore</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">Sign in/log in</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-list"></i></a></li>
             </ul>
         </nav>
     </header>
     
+    
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
